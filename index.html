@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포시즌스 서울</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="scroll">
+      <p>SCROLL DOWN</p>
+    </div>
+    <header>
+      <div class="notice_ban">
+        <p>
+          글로벌 건강 안전 프로그램 리드 위드 케어(Lead With Care)와 체류 시
+          유의사항에 대해 자세히 알아보려면 여기를 클릭하세요.
+        </p>
+      </div>
+      <nav>
+        <h1>
+          <div><img src="./img/seoul_logo.png" alt="로고" /></div>
+          <span>포시즌스 글로벌 호텔 앤 리조트</span>
+        </h1>
+        <ul>
+          <li>
+            <a href="#">포시즌스</a>
+            <ul>
+              <li><a href="#">호텔 개요</a></li>
+              <li><a href="#">사진 및 동영상</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">객실</a>
+            <ul>
+              <li><a href="#">객실</a></li>
+              <li><a href="#">스위트</a></li>
+              <li><a href="#">스페셜 스위트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">다이닝</a>
+            <ul>
+              <li><a href="#">레스토랑 소개</a></li>
+              <li><a href="#">셰프 팀</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">편의시설</a>
+            <ul>
+              <li><a href="#">프로모션</a></li>
+              <li><a href="#">스파</a></li>
+              <li><a href="#">더클럽</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">연회</a>
+            <ul>
+              <li><a href="#">연회</a></li>
+              <li><a href="#">식음료</a></li>
+              <li><a href="#">견적서 요청</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">웨딩</a>
+            <ul>
+              <li><a href="#">웨딩홀</a></li>
+              <li><a href="#">웨딩패키지</a></li>
+              <li><a href="#">문의 및 안내</a></li>
+            </ul>
+          </li>
+          <li><button>KR</button></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sec1">
+      <!-- Swiper -->
+      <div class="swiper sec1_backimg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/SKO_128_original.jpg" alt="main_1" />
+            <p>
+              과거와 현재를 한 눈에 볼 수 있는 <br />
+              프라이빗한 공간
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/SKO_132_original.jpg" alt="main_2" />
+            <p>
+              통유리창으로 들어오는 <br />
+              햇살이 가득한 공간
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/SKO_482_original.jpg" alt="main_3" />
+            <p>
+              맞춤형 스파를 <br />
+              경험하는 공간
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/SKO_671_original.jpg" alt="main_4" />
+            <p>
+              상상하던 결혼식이 <br />
+              현실이 되는 공간
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".sec1_backimg", {
+          pagination: {
+            el: ".sec1_pg",
+          },
+        });
+      </script>
+      <div class="mw">
+        <div class="btn_login">
+          <button>객실예약</button>
+          <button>예약조회</button>
+          <button>회원가입</button>
+          <button>로그인</button>
+        </div>
+        <h2>포시즌스 호텔 서울</h2>
+        <input type="date" name="startday" placeholder="체크인" />
+        <input type="date" name="" placeholder="체크아웃" />
+        <select name="room" id="room">
+          <option value="normal">객실수</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <select name="adult" id="adult">
+          <option value="normal">성인</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <select name="children" id="children">
+          <option value="normal">아동</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="swiper-pagination sec1_pg"></div>
+    </section>
+    <section class="sec2">
+      <h3>Promotion</h3>
+      <ul>
+        <li>
+          <div><img src="./img/re_promotion1.jpg" alt="프로모션1" /></div>
+          <p>키즈 포 올 시즌스</p>
+          <p>
+            키즈 포 올 시즌스 라운지 이용, 두디 버블 아트선물 세트, 객실 내 키즈
+            텐트까지 아이에게 잊지 못할 추억을 심어줄 포시즌스 호텔 서울에서
+            여유로운 가족 휴가를 완성해보세요.
+          </p>
+          <p>2022-11-01 ~ 22-11-30</p>
+        </li>
+        <li>
+          <div><img src="./img/re_promotion4.jpg" alt="프로모션2" /></div>
+          <p>사전 예약 - 최대 20% 할인</p>
+          <p>
+            미리 예약하시고 최대 20% 할인 혜택을 받으세요. 최소한 14일 전에
+            예약이 완료되어야 합니다.
+          </p>
+          <p>2022-11-01 ~ 23-12-31</p>
+        </li>
+        <li>
+          <div><img src="./img/re_promotion2.jpg" alt="프로모션3" /></div>
+          <p>페스티브 매직 모먼트</p>
+          <p>
+            최고급 크리스탈 브랜드 ‘바카라’ 기프트와 함께 잊지 못할 연말을
+            준비해보세요. 크리스탈 그래스에 버블 모티브가 적용된 바카라 벨루가
+            텀블러는 고급스러움과 완벽함을 더해줍니다. 각인 서비스로 세상에
+            하나뿐인 선물을 준비할 수 있습니다.
+          </p>
+          <p>2022-12-01 ~ 22-12-31</p>
+        </li>
+        <li>
+          <div><img src="./img/re_promotion3.jpg" alt="프로모션4" /></div>
+          <p>기념일 패키지</p>
+          <p>
+            객실에 기념일을 위한 장식 세팅과 디저트를 준비해 드리며, 매일 2인
+            조식 서비스와 사우나 시설 이용권을 함께 제공합니다.
+          </p>
+          <p>2022-11-01 ~ 22-12-31</p>
+        </li>
+      </ul>
+    </section>
+    <section class="sec2_ban">
+      <div class="mw">
+        <h3 hidden>SNS</h3>
+        <p>
+          포시즌스 공식 계정에서 <br />
+          더 다양한 프로모션을 만나보세요
+        </p>
+        <div><img src="./img/sns_1.jpg" alt="sns1" /></div>
+        <div><img src="./img/sns_2.jpg" alt="sns2" /></div>
+        <div><img src="./img/sns_3.jpg" alt="sns3" /></div>
+      </div>
+    </section>
+    <section class="sec3">
+      <h3>Rooms</h3>
+      <p>
+        스타일리시하고 모던한 공간에서 누리는 최고의 편안함. <br />
+        프라이버시가 보장된 안락한 공간에서 활력을 재충전하며,<br />
+        서울의 심장부를 내려다보는 매력적인 순간을 즐겨보세요.
+      </p>
+      <div class="sec3_btn1">
+        <button>디럭스</button>
+        <button>장애인전용디럭스</button>
+        <button>그랜드패밀리</button>
+        <button>클럽</button>
+      </div>
+      <div class="sec3_btn2">
+        <button>프리미어</button>
+        <button>코너프리미어</button>
+        <button>프리미어패밀리</button>
+      </div>
+      <div class="sec3_btn3">
+        <button>시티뷰이그제큐티브스위트</button>
+        <button>팰리스뷰이그제큐티브스위트</button>
+      </div>
+      <div class="sec3_btn4">
+        <button>앰배서더원베드룸스위트</button>
+        <button>세종스위트</button>
+        <button>프레지덴셜스위트</button>
+      </div>
+      <div class="swiper sec3_btn1">
+        <ul class="swiper-wrapper sec3_room1">
+          <li class="swiper-slide">
+            <div><img src="./img/디럭스1.jpg" alt="디럭스1" /></div>
+          </li>
+          <li class="swiper-slide">
+            <div><img src="./img/디럭스2.jpg" alt="디럭스2" /></div>
+          </li>
+          <li class="swiper-slide">
+            <div><img src="./img/디럭스3.jpg" alt="디럭스3" /></div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_1next"></div>
+        <div class="swiper-button-prev sec3_1prev"></div>
+        <div class="swiper-pagination sec3_1pg"></div>
+      </div>
+      <div class="swiper sec3_btn2">
+        <ul class="swiper-wrapper sec3_room2">
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/장애인전용디럭스룸.jpg"
+                alt="장애인전용디럭스룸"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_2next"></div>
+        <div class="swiper-button-prev sec3_2prev"></div>
+        <div class="swiper-pagination sec3_2pg"></div>
+      </div>
+      <div class="swiper sec3_btn3">
+        <ul class="swiper-wrapper sec3_room3">
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/그랜드패밀리룸1.jpg" alt="그랜드패밀리룸1" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/그랜드패밀리룸2.jpg" alt="그랜드패밀리룸2" />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_3next"></div>
+        <div class="swiper-button-prev sec3_3prev"></div>
+        <div class="swiper-pagination sec3_3pg"></div>
+      </div>
+      <div class="swiper sec3_btn4">
+        <ul class="swiper-wrapper sec3_room4">
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/클럽1.jpg" alt="클럽룸1" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/클럽2.jpg" alt="클럽룸2" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/클럽3.jpg" alt="클럽룸3" />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_4next"></div>
+        <div class="swiper-button-prev sec3_4prev"></div>
+        <div class="swiper-pagination sec3_4pg"></div>
+      </div>
+      <div class="swiper sec3_btn5">
+        <ul class="swiper-wrapper sec3_room5">
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/프리미어1.jpg" alt="프리미어1" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/프리미어2.jpg" alt="프리미어2" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/프리미어3.jpg" alt="프리미어3" />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_5next"></div>
+        <div class="swiper-button-prev sec3_5prev"></div>
+        <div class="swiper-pagination sec3_5pg"></div>
+      </div>
+      <div class="swiper sec3_btn6">
+        <ul class="swiper-wrapper sec3_room6">
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/코너프리미어1.jpg" alt="코너프리미어1" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/코너프리미어2.jpg" alt="코너프리미어2" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/코너프리미어3.jpg" alt="코너프리미어3" />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_6next"></div>
+        <div class="swiper-button-prev sec3_6prev"></div>
+        <div class="swiper-pagination sec3_6pg"></div>
+      </div>
+      <div class="swiper sec3_btn7">
+        <ul class="swiper-wrapper sec3_room7">
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/프리미어패밀리1.jpg" alt="프리미어패밀리1" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/프리미어패밀리2.jpg" alt="프리미어패밀리2" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/프리미어패밀리3.jpg" alt="프리미어패밀리3" />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_7next"></div>
+        <div class="swiper-button-prev sec3_7prev"></div>
+        <div class="swiper-pagination sec3_7pg"></div>
+      </div>
+      <div class="swiper sec3_btn8">
+        <ul class="swiper-wrapper sec3_room8">
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/시티뷰이그제큐티브스위트1.jpg"
+                alt="시티뷰이그제큐티브스위트1"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/시티뷰이그제큐티브스위트2.jpg"
+                alt="시티뷰이그제큐티브스위트2"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/시티뷰이그제큐티브스위트3.jpg"
+                alt="시티뷰이그제큐티브스위트3"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/시티뷰이그제큐티브스위트4.jpg"
+                alt="시티뷰이그제큐티브스위트4"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_8next"></div>
+        <div class="swiper-button-prev sec3_8prev"></div>
+        <div class="swiper-pagination sec3_8pg"></div>
+      </div>
+      <div class="swiper sec3_btn9">
+        <ul class="swiper-wrapper sec3_room9">
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/팰리스뷰이그제큐티브스위트1.jpg"
+                alt="팰리스뷰이그제큐티브스위트1"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/팰리스뷰이그제큐티브스위트2.jpg"
+                alt="팰리스뷰이그제큐티브스위트2"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/팰리스뷰이그제큐티브스위트3.jpg"
+                alt="팰리스뷰이그제큐티브스위트3"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/팰리스뷰이그제큐티브스위트4.jpg"
+                alt="팰리스뷰이그제큐티브스위트4"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_9next"></div>
+        <div class="swiper-button-prev sec3_9prev"></div>
+        <div class="swiper-pagination sec3_9pg"></div>
+      </div>
+      <div class="swiper sec3_btn10">
+        <ul class="swiper-wrapper sec3_room10">
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/앰배서더 원 베드룸 스위트1.jpg"
+                alt="앰배서더 원 베드룸 스위트1"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/앰배서더 원 베드룸 스위트2.jpg"
+                alt="앰배서더 원 베드룸 스위트2"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/앰배서더 원 베드룸 스위트3.jpg"
+                alt="앰배서더 원 베드룸 스위트3"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_10next"></div>
+        <div class="swiper-button-prev sec3_10prev"></div>
+        <div class="swiper-pagination sec3_10pg"></div>
+      </div>
+      <div class="swiper sec3_btn11">
+        <ul class="swiper-wrapper sec3_room11">
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/세종스위트1.jpg" alt="세종스위트1" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/세종스위트2.jpg" alt="세종스위트2" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/세종스위트3.jpg" alt="세종스위트3" />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img src="./img/세종스위트4.jpg" alt="세종스위트4" />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_11next"></div>
+        <div class="swiper-button-prev sec3_11prev"></div>
+        <div class="swiper-pagination sec3_11pg"></div>
+      </div>
+      <div class="swiper sec3_btn12">
+        <ul class="swiper-wrapper sec3_room12">
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/프레지덴셜 스위트1.jpg"
+                alt="프레지덴셜 스위트1"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/프레지덴셜 스위트2.jpg"
+                alt="프레지덴셜 스위트2"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/프레지덴셜 스위트3.jpg"
+                alt="프레지덴셜 스위트3"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/프레지덴셜 스위트4.jpg"
+                alt="프레지덴셜 스위트4"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/프레지덴셜 스위트5.jpg"
+                alt="프레지덴셜 스위트5"
+              />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div>
+              <img
+                src="./img/프레지덴셜 스위트6.jpg"
+                alt="프레지덴셜 스위트6"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next sec3_12next"></div>
+        <div class="swiper-button-prev sec3_12prev"></div>
+        <div class="swiper-pagination sec3_12pg"></div>
+      </div>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".sec3_btn1", {
+          pagination: {
+            el: ".sec3_1pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_1next",
+            prevEl: ".sec3_1prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn2", {
+          pagination: {
+            el: ".sec3_2pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_2next",
+            prevEl: ".sec3_2prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn3", {
+          pagination: {
+            el: ".sec3_3pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_3next",
+            prevEl: ".sec3_3prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn4", {
+          pagination: {
+            el: ".sec3_4pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_4next",
+            prevEl: ".sec3_4prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn5", {
+          pagination: {
+            el: ".sec3_5pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_5next",
+            prevEl: ".sec3_5prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn6", {
+          pagination: {
+            el: ".sec3_6pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_6next",
+            prevEl: ".sec3_6prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn7", {
+          pagination: {
+            el: ".sec3_7pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_7next",
+            prevEl: ".sec3_7prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn8", {
+          pagination: {
+            el: ".sec3_8pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_8next",
+            prevEl: ".sec3_8prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn9", {
+          pagination: {
+            el: ".sec3_9pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_9next",
+            prevEl: ".sec3_9prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn10", {
+          pagination: {
+            el: ".sec3_10pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_10next",
+            prevEl: ".sec3_10prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn11", {
+          pagination: {
+            el: ".sec3_11pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_11next",
+            prevEl: ".sec3_11prev",
+          },
+        });
+        var swiper = new Swiper(".sec3_btn12", {
+          pagination: {
+            el: ".sec3_12pg",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".sec3_12next",
+            prevEl: ".sec3_12prev",
+          },
+        });
+      </script>
+    </section>
+    <section class="sec4">
+      <ul class="sec4_left">
+        <li class="sec4_img1">
+          <div>
+            <img src="./img/SKO_466_original_더마켓키친.jpg" alt="더마켓키친" />
+          </div>
+          <p>더 마켓 키친 - 뷔페</p>
+          <p><span>조식</span><span>매일 오전 6:30 - 오전 10:30</span></p>
+          <p><span>점심</span><span>월-금 오전 11:30 - 오후 2:30</span></p>
+          <p><span>저녁</span><span>월-일 오후 5:30 - 오후 9:30</span></p>
+          <p>
+            <span>주말브런치</span><span>토-일 오전 11:30 - 오후 03:00</span>
+          </p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img2">
+          <div>
+            <img src="./img/SKO_709_original_보칼리노.jpg" alt="보칼리노" />
+          </div>
+          <p>보칼리노 - 이탈리아식</p>
+          <p><span>점심</span><span>오전 11:30 - 오후 2:30</span></p>
+          <p><span>저녁</span><span>오후 5:30 - 오후 9:30</span></p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img3">
+          <div>
+            <img src="./img/SKO_183_original_아키라백.jpg" alt="아키라 백" />
+          </div>
+          <p>아키라 백 - 모던 일식</p>
+          <p><span>점심</span><span>오전 11:30 - 오후 2:30</span></p>
+          <p><span>저녁</span><span>오후 5:30 - 오후 9:30</span></p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img4">
+          <div><img src="./img/SKO_205_original_유안.jpg" alt="유유안" /></div>
+          <p>유유안 - 광동식 중식당</p>
+          <p><span>점심</span><span>오전 11:30 - 오후 2:30</span></p>
+          <p><span>저녁</span><span>오후 5:30 - 오후 9:30</span></p>
+          <p>
+            <span>주말 딤섬 브런치</span><span>오전 11:30 - 오후 2:30</span>
+          </p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img5">
+          <div><img src="./img/FSH_1189_original.jpg" alt="룸서비스" /></div>
+          <p>룸서비스</p>
+          <p><span>아침</span><span>오전 6:00 - 오전 11:00</span></p>
+          <p><span>올데이 다이닝</span><span>오전 11:00 - 오후 11:00</span></p>
+          <p><span>야간</span><span>오후 11:00 - 오전 6:00</span></p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img6">
+          <div><img src="./img/SKO_474_original_마루.jpg" alt="마루" /></div>
+          <p>마루 - 라운지 및 한식</p>
+          <p>
+            <span>컨티넨탈 브랙퍼스트</span><span>오전 7:00 - 오전 11:00</span>
+          </p>
+          <p><span>올데이 다이닝</span><span>오전 11:00 - 오후 10:00</span></p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img7">
+          <div><img src="./img/SKO_160_original_찰스H.jpg" alt="찰스H" /></div>
+          <p>찰스H - 바</p>
+          <p><span>매일</span><span>오후 6:00 - 오전 1:30</span></p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img8">
+          <div>
+            <img
+              src="./img/SKO_463_original_컨펙션즈 바이 포시즌스.jpg"
+              alt="컨펙션즈 바이 포시즌스"
+            />
+          </div>
+          <p>컨펙션즈 바이 포시즌스 - 디저트</p>
+          <p><span>베이커리 및 커피</span><span>오전 8:00 - 오후 8:00</span></p>
+          <p>
+            <span>샌드위치 및 샐러드</span><span>오전 10:30 - 오후 5:30</span>
+          </p>
+          <p>02-6388-5500</p>
+        </li>
+        <li class="sec4_img9">
+          <div>
+            <img src="./img/SKO_1291_aspect16x9_오울.jpg" alt="오울" />
+          </div>
+          <p>오울 - 전통 소울 푸드 및 한국 칵테일</p>
+          <p><span>화-토 오후 5:30 - 오전 12:00</span></p>
+          <p><span>12월 31일 오후 5:30 - 오전 1:30</span></p>
+          <p>02-6388-5500</p>
+        </li>
+      </ul>
+      <div class="sec4_right">
+        <h3>Dining</h3>
+        <div>
+          <button><img src="./img/sec4_icon1.jpg" alt="다이닝로고1" /></button>
+          <button><img src="./img/sec4_icon2.jpg" alt="다이닝로고2" /></button>
+          <button><img src="./img/sec4_icon3.jpg" alt="다이닝로고3" /></button>
+          <button><img src="./img/sec4_icon4.jpg" alt="다이닝로고4" /></button>
+          <button>
+            <img src="./img/sec4_icon_center.jpg" alt="다이닝로고5" />
+          </button>
+          <button><img src="./img/sec4_icon5.jpg" al t="다이닝로고6" /></button>
+          <button><img src="./img/sec4_icon6.jpg" alt="다이닝로고7" /></button>
+          <button><img src="./img/sec4_icon7.jpg" alt="다이닝로고8" /></button>
+          <button><img src="./img/sec4_icon8.jpg" alt="다이닝로고9" /></button>
+        </div>
+      </div>
+    </section>
+    <section class="sec5">
+      <h3>SEOUL of FOURSEASONS</h3>
+      <div>
+        <p>조선왕조의 향기</p>
+        <p>
+          한국가구박물관에서 시간을 거스르는 여행을 즐겨보세요. <br />
+          총 2,000여점이 넘는 한국의 전통 목가구들과 함께 <br />
+          한국의 전통 마당, 집을 둘러싼 자연의 조화로운 모습을 통하여 <br />
+          아름다운 한국의 주생활 문화를 감상하실 수 있습니다.
+        </p>
+      </div>
+      <div>
+        <p>지친 몸에 휴식을 주는 스파</p>
+        <p>
+          도심 속 품격 있는 포시즌스 호텔 서울 스파는 휴양지이자 피난처이며,
+          안식처입니다. <br />
+          포시즌스 호텔 서울 스파는 클래식한 테라피에 최신 트렌드를 더한
+          차별화된 프로그램을 제공해 <br />
+          지친 심신에 생기와 활력을 불어넣고, 균형을 되찾을 수 있도록 돕습니다.
+          <br />
+          테라피스트는 최고의 만족을 위해 전문적인 스킬과 섬세한 힐링, 그리고
+          엄선한 스킨케어 제품을 사용하여 <br />
+          개인을 위한 맞춤형 스파 트리트먼트를 경험하실 수 있습니다.
+        </p>
+      </div>
+      <div>
+        <p>쇼핑의 천국</p>
+        <p>
+          최고급 플래그십 스토어에서부터 활기 넘치는 거리의 노점들까지,<br />
+          서울은 다양한 가게들이 거리를 가득 채우고 있습니다 <br />
+          고급스러운 분위기의 강남 지역에 위치한 압구정 로데오 거리를 먼저
+          둘러보시고,<br />
+          다음 쇼핑지를 결정하지 못하셨다면 호텔에 문의하시기 바랍니다. <br />
+          원하시는 품목에 따라 최적의 쇼핑 장소를 안내해 드립니다.
+        </p>
+      </div>
+    </section>
+    <section class="sec6">
+      <div class="sec6_left">
+        <h3>Contact us</h3>
+        <p>서울 종로구 새문안로 97 (당주동)</p>
+        <p>+82 (2) 6388-5000</p>
+      </div>
+      <div class="sec6_right">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.335607292192!2d126.97322561564798!3d37.5707142316459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2932e4b46ef%3A0xbc18b3d1ec10a17a!2z7Y-s7Iuc7KaM7IqkIO2YuO2FlCDshJzsmrg!5e0!3m2!1sko!2skr!4v1669077011438!5m2!1sko!2skr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
