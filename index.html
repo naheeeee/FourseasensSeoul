@@ -9,7 +9,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="common.css" />
+    <!-- <link rel="stylesheet" href="./datepicker.css" /> -->
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./jquery-ui.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -18,30 +20,45 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="common.js" defer></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+      integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="jquery-ui.min.js" defer></script> -->
+    <script src="common.js" defer></script>
     <script>
       $(function () {
         $(".notice_ban>button").click(function () {
           $(".notice_ban").slideUp(700);
         });
+        $(".datepicker").datepicker();
       });
     </script>
   </head>
   <body>
-    <div class="scroll">
+    <div class="scroll on">
       <p>SCROLL DOWN</p>
     </div>
     <header id="header">
       <div class="notice_ban">
         <p>
-          글로벌 건강 안전 프로그램 리드 위드 케어(Lead With Care)와 체류 시
-          유의사항에 대해 자세히 알아보려면 여기를 클릭하세요.
+          글로벌 건강 안전 프로그램 리드 위드 케어(Lead With Care)와 <br />
+          체류 시 유의사항에 대해 자세히 알아보려면 여기를 클릭하세요.
         </p>
         <button>X</button>
       </div>
@@ -53,6 +70,10 @@
           </div>
           <div class="logo_text">
             <span>포시즌스 글로벌 호텔 앤 리조트</span>
+            <a href="#">자세히보기</a>
+          </div>
+          <div class="small_logo">
+            <img src="./img/logo_img.png" alt="포시즌스글로벌" />
             <a href="#">자세히보기</a>
           </div>
         </h1>
@@ -115,6 +136,10 @@
               <li><a href="#">日本語</a></li>
             </ul>
           </div>
+          <div class="ham">
+            <button class="ham_open"><i class="fa-solid fa-bars"></i></button>
+            <button class="ham_close">닫기</button>
+          </div>
         </div>
         <div class="btn_login mw">
           <button>객실예약</button>
@@ -133,7 +158,7 @@
               <img src="./img/SKO_128_original.jpg" alt="main_1" />
             </div>
             <div class="sec1_text mw">
-              <h2>포시즌스 호텔 서울</h2>
+              <h2>포시즌스 호텔 <br />서울</h2>
               <p>
                 과거와 현재를 한 눈에 볼 수 있는 <br />
                 프라이빗한 공간
@@ -179,52 +204,56 @@
         </ul>
         <div class="sec1_con mw">
           <div class="sec1_input">
-            <input
-              type="date"
-              name="startday"
-              placeholder="체크인"
-              class="checkin"
-            />
-            <input
-              type="date"
-              name=""
-              placeholder="체크아웃"
-              class="checkout"
-            />
-            <select name="room" id="room" class="room">
-              <option value="normal">객실수</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <select name="adult" id="adult" class="adult">
-              <option value="normal">성인</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-            <select name="children" id="children" class="children">
-              <option value="normal">아동</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
+            <div>
+              <input
+                type="text"
+                name="startday"
+                placeholder="체크인 날짜"
+                class="datepicker"
+              />
+              <input
+                type="text"
+                name=""
+                placeholder="체크아웃 날짜"
+                class="datepicker"
+              />
+            </div>
+            <div>
+              <select name="room" caption="객실수" id="room" class="room">
+                <option value>객실수</option>
+                <option value="1">객실 1</option>
+                <option value="2">객실 2</option>
+                <option value="3">객실 3</option>
+                <option value="4">객실 4</option>
+                <option value="5">객실 5</option>
+              </select>
+              <select name="adult" id="adult" class="adult">
+                <option value="normal">성인</option>
+                <option value="1">성인 1</option>
+                <option value="2">성인 2</option>
+                <option value="3">성인 3</option>
+                <option value="4">성인 4</option>
+                <option value="5">성인 5</option>
+                <option value="6">성인 6</option>
+                <option value="7">성인 7</option>
+                <option value="8">성인 8</option>
+                <option value="9">성인 9</option>
+                <option value="10">성인 10</option>
+              </select>
+              <select name="children" id="children" class="children">
+                <option value="normal">아동</option>
+                <option value="1">아동 1</option>
+                <option value="2">아동 2</option>
+                <option value="3">아동 3</option>
+                <option value="4">아동 4</option>
+                <option value="5">아동 5</option>
+                <option value="6">아동 6</option>
+                <option value="7">아동 7</option>
+                <option value="8">아동 8</option>
+                <option value="9">아동 9</option>
+                <option value="10">아동 10</option>
+              </select>
+            </div>
             <a href="#" class="sec1_search">SEARCH</a>
           </div>
           <div class="swiper-pagination sec1_pg mw"></div>
@@ -884,7 +913,7 @@
     <section class="sec4">
       <div class="sec4_con mw">
         <ul class="sec4_left">
-          <li class="sec4_img1">
+          <li class="sec4_img1 on">
             <div class="sec4_tabimg">
               <img
                 src="./img/SKO_466_original_더마켓키친.jpg"
@@ -1086,45 +1115,51 @@
     </section>
     <section class="sec5">
       <h3>SEOUL of FOURSEASONS</h3>
-      <div class="sec5_con on">
-        <div class="sec5_text">
-          <p>조선왕조의 향기</p>
-          <p>
-            한국가구박물관에서 시간을 거스르는 여행을 즐겨보세요. <br />
-            총 2,000여점이 넘는 한국의 전통 목가구들과 함께 <br />
-            한국의 전통 마당, 집을 둘러싼 자연의 조화로운 모습을 통하여 <br />
-            아름다운 한국의 주생활 문화를 감상하실 수 있습니다.
-          </p>
+      <div>
+        <div class="sec5_con on">
+          <div class="sec5_text">
+            <p>조선왕조의 향기</p>
+            <p>
+              한국가구박물관에서 시간을 거스르는 여행을 즐겨보세요. <br />
+              총 2,000여점이 넘는 한국의 전통 목가구들과 함께 <br />
+              한국의 전통 마당, 집을 둘러싼 자연의 조화로운 모습을 통하여 <br />
+              아름다운 한국의 주생활 문화를 감상하실 수 있습니다.
+            </p>
+            <p>전통</p>
+          </div>
         </div>
-      </div>
-      <div class="sec5_con">
-        <div class="sec5_text">
-          <p>지친 몸에 휴식을 주는 스파</p>
-          <p>
-            도심 속 품격 있는 포시즌스 호텔 서울 스파는 휴양지이자 피난처이며,
-            안식처입니다. <br />
-            포시즌스 호텔 서울 스파는 클래식한 테라피에 최신 트렌드를 더한
-            차별화된 프로그램을 제공해 <br />
-            지친 심신에 생기와 활력을 불어넣고, 균형을 되찾을 수 있도록
-            돕습니다.
-            <br />
-            테라피스트는 최고의 만족을 위해 전문적인 스킬과 섬세한 힐링, 그리고
-            엄선한 스킨케어 제품을 사용하여 <br />
-            개인을 위한 맞춤형 스파 트리트먼트를 경험하실 수 있습니다.
-          </p>
+        <div class="sec5_con">
+          <div class="sec5_text">
+            <p>지친 몸에 휴식을 주는 스파</p>
+            <p>
+              도심 속 품격 있는 포시즌스 호텔 서울 스파는 휴양지이자 피난처이며,
+              안식처입니다. <br />
+              포시즌스 호텔 서울 스파는 클래식한 테라피에 최신 트렌드를 더한
+              차별화된 프로그램을 제공해 <br />
+              지친 심신에 생기와 활력을 불어넣고, 균형을 되찾을 수 있도록
+              돕습니다.
+              <br />
+              테라피스트는 최고의 만족을 위해 전문적인 스킬과 섬세한 힐링,
+              그리고 엄선한 스킨케어 제품을 사용하여 <br />
+              개인을 위한 맞춤형 스파 트리트먼트를 경험하실 수 있습니다.
+            </p>
+            <p>휴식</p>
+          </div>
         </div>
-      </div>
-      <div class="sec5_con">
-        <div class="sec5_text">
-          <p>쇼핑의 천국</p>
-          <p>
-            최고급 플래그십 스토어에서부터 활기 넘치는 거리의 노점들까지,<br />
-            서울은 다양한 가게들이 거리를 가득 채우고 있습니다 <br />
-            고급스러운 분위기의 강남 지역에 위치한 압구정 로데오 거리를 먼저
-            둘러보시고,<br />
-            다음 쇼핑지를 결정하지 못하셨다면 호텔에 문의하시기 바랍니다. <br />
-            원하시는 품목에 따라 최적의 쇼핑 장소를 안내해 드립니다.
-          </p>
+        <div class="sec5_con">
+          <div class="sec5_text">
+            <p>쇼핑의 천국</p>
+            <p>
+              최고급 플래그십 스토어에서부터 활기 넘치는 거리의 노점들까지,<br />
+              서울은 다양한 가게들이 거리를 가득 채우고 있습니다 <br />
+              고급스러운 분위기의 강남 지역에 위치한 압구정 로데오 거리를 먼저
+              둘러보시고,<br />
+              다음 쇼핑지를 결정하지 못하셨다면 호텔에 문의하시기 바랍니다.
+              <br />
+              원하시는 품목에 따라 최적의 쇼핑 장소를 안내해 드립니다.
+            </p>
+            <p>쇼핑</p>
+          </div>
         </div>
       </div>
     </section>
@@ -1203,11 +1238,15 @@
               <p>ⓒFour Seasons Hotels Limited 1997-2022. All Rights Reserved</p>
             </div>
             <div class="foot_notice">
-              <a href="#">법적고지</a>
-              <a href="#">개인정보 취급방침</a>
-              <a href="#">쿠키 환경설정</a>
-              <a href="#">Do Not Sell My Personal Information</a>
-              <a href="#">접근성 정책</a>
+              <div>
+                <a href="#">법적고지</a>
+                <a href="#">개인정보 취급방침</a>
+                <a href="#">쿠키 환경설정</a>
+              </div>
+              <div>
+                <a href="#">Do Not Sell My Personal Information</a>
+                <a href="#">접근성 정책</a>
+              </div>
             </div>
           </div>
         </div>

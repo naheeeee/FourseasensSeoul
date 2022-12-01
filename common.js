@@ -32,7 +32,7 @@ $hdLangBtn.addEventListener("click", function () {
 window.addEventListener("scroll", function () {
   let hdscroll = window.scrollY;
   //   console.log(window.scrollY);
-  if (hdscroll > 900) {
+  if (hdscroll > 800) {
     $btnLogin.classList.add("on");
   } else {
     $btnLogin.classList.remove("on");
@@ -43,14 +43,81 @@ window.addEventListener("scroll", function () {
 $roomBtn.forEach(function (item, idx) {
   item.addEventListener("click", function (e) {
     e.preventDefault();
+    $roomBtn.forEach(function (test) {
+      test.classList.remove("on");
+    });
     this.classList.add("on");
+    console.log(this);
+    // test(idx);
 
-    test(idx);
+    $sec3RightCon.forEach(function (test) {
+      test.classList.remove("on");
+    });
+    $sec3RightCon[idx].classList.add("on");
   });
 });
-function test(num) {
-  $sec3RightCon.forEach(function (Tcon, i) {
-    Tcon.classList.remove("on");
+// function test(num) {
+//   $sec3RightCon.forEach(function (Tcon, i) {
+//     Tcon.classList.add("on");
+//   });
+//   $sec3RightCon[num].classList.add("on");
+// }
+
+const $sec4BtnsItem = document.querySelectorAll(".sec4_btns>div>button"),
+  // $sec4Tabimg = document.querySelectorAll(".sec4_tabimg"),
+  $sec4Tabimg = document.querySelectorAll(".sec4_left > li"),
+  $sec4Text = document.querySelectorAll(".sec4_text");
+
+// sec4_탭
+// 호버시 이미지등장
+$sec4BtnsItem.forEach(function (list, indx) {
+  list.addEventListener("click", function (ev) {
+    ev.preventDefault();
+
+    test(indx);
   });
-  $sec3RightCon[num].classList.add("on");
+});
+$sec4BtnsItem.forEach(function (list, indx) {
+  list.addEventListener("click", function () {
+    $sec4Tabimg.classList.add("on");
+  });
+});
+function test(sec4num) {
+  $sec4Tabimg.forEach(function (TIcon, index) {
+    TIcon.classList.remove("on");
+  });
+  $sec4Tabimg[sec4num].classList.add("on");
 }
+
+// sec5_아코디언
+const $sec5Con = document.querySelectorAll(".sec5_con"),
+  $sec5TextTwo = document.querySelectorAll(".sec5_text>p:nth-of-type(2)");
+
+$sec5Con.forEach(function (accolist, accoidx) {
+  accolist.addEventListener("click", function () {
+    $sec5Con.forEach(function (test) {
+      test.classList.remove("on");
+    });
+    this.classList.add("on");
+  });
+});
+
+// ham
+const $hamOpen = document.querySelector(".ham_open"),
+  $hamClose = document.querySelector(".ham_close"),
+  $gnb = document.querySelector(".gnb");
+
+$hamOpen.addEventListener("click", function () {
+  setTimeout(function () {
+    $gnb.classList.add("on");
+    $hamClose.classList.add("on");
+  }, 300);
+  document.body.classList.add("scrollLock");
+});
+
+$hamClose.addEventListener("click", function () {
+  setTimeout(function () {
+    $gnb.classList.remove("on");
+    $hamClose.classList.remove("on");
+  }, 300);
+});
