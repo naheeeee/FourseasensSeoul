@@ -1901,13 +1901,9 @@ footer {
     transform: translateX(-50%);
     overflow: hidden;
   }
-  .sec4 .sec4_tabimg::before {
-    display: block;
-  }
   .sec4 .sec4_text {
     transform: translate(-50%, -50%);
     left: 50%;
-    display: block;
     white-space: nowrap;
   }
   .sec4 .sec4_text > p:first-of-type {
