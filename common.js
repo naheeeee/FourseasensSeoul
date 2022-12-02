@@ -111,6 +111,7 @@ $hamOpen.addEventListener("click", function () {
   setTimeout(function () {
     $gnb.classList.add("on");
     $hamClose.classList.add("on");
+    $btnLogin.classList.add("gnbon");
   }, 300);
   document.body.classList.add("scrollLock");
 });
@@ -119,5 +120,7 @@ $hamClose.addEventListener("click", function () {
   setTimeout(function () {
     $gnb.classList.remove("on");
     $hamClose.classList.remove("on");
+    $btnLogin.classList.remove("gnbon");
   }, 300);
+  document.body.classList.remove("scrollLock");
 });
